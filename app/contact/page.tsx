@@ -124,8 +124,8 @@ export default function ContactPage() {
           <InfoCard
             icon={<Mail />}
             title="Email"
-            value="info@sunnahspot.ca"
-            href="mailto:info@sunnahspot.ca"
+            value="info@sunnahspot.com"
+            href="mailto:info@sunnahspot.com"
             hint="Best for registration & program questions"
           />
           <InfoCard

@@ -29,7 +29,7 @@ const PROGRAMS = [
 
 const SKILL = ["Beginner", "Intermediate", "Advanced", "Rep/Club experience"] as const;
 
-const HEARD = ["Friend/Family", "Social Media", "Mosque/Community", "School", "Other"] as const;
+const HEARD = ["Flyer", "Instagram", "Facebook", "WhatsApp", "Mosque/Community", "Word of Mouth", "Other"] as const;
 
 function InputLabel({ children }: { children: React.ReactNode }) {
   return <label className="text-sm font-semibold text-white/90">{children}</label>;
