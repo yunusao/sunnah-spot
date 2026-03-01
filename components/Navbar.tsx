@@ -28,7 +28,7 @@ export default function Navbar() {
               SUNNAH SPOT SALIHEEN
             </div>
             <div className="text-xs tracking-widest text-white/70">
-              Scarborough • Mississauga • Ottawa
+              Greater Toronto Area • Ottawa
             </div>
           </div>
         </Link>
@@ -51,11 +51,11 @@ export default function Navbar() {
             Join Now
           </Link>
           <Link
-  href="/contact"
-  className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-[rgb(var(--primary))] hover:bg-white/90"
->
-  Contact Us
-</Link>
+            href="/contact"
+            className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-[rgb(var(--primary))] hover:bg-white/90"
+          >
+            Contact Us
+          </Link>
         </nav>
 
         {/* Mobile */}

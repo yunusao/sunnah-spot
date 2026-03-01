@@ -131,8 +131,8 @@ export default function ContactPage() {
           <InfoCard
             icon={<Phone />}
             title="Phone"
-            value="(647) 000-0000"
-            href="tel:+16470000000"
+            value="(647) 545-0664"
+            href="tel:+16475450664"
             hint="Replace with your real number"
           />
           <InfoCard

@@ -202,7 +202,7 @@ export default function AboutPage() {
           <div className="relative overflow-hidden rounded-2xl border border-black/5 shadow-sm">
             <div className="relative h-72 sm:h-96">
               <Image
-                src="/images/onevone.png"
+                src="/images/about.jpeg"
                 alt="Coach mentoring youth"
                 fill
                 className="object-cover object-[center_35%]"

@@ -20,7 +20,7 @@ const PROGRAMS: Program[] = [
       "Coaches provide personalized feedback tailored to each player’s level. We also emphasize physical conditioning, mental toughness, teamwork, and sportsmanship—building confidence for the next level.",
     ],
     details: [
-      "Boys ages 5–13",
+      "Boys ages 4–18",
       "8–12 week duration (depending on age and skill level)",
       "1–2 practices per week (depending on age and skill level)",
       "Sunnah Spot dri-fit performance t-shirt",
@@ -45,7 +45,7 @@ const PROGRAMS: Program[] = [
       "Tournaments",
     ],
     ctaLabel: "Tryouts / Register",
-    ctaHref: "/registration",
+    ctaHref: "https://www.brotherhoodelite.ca/registration",
   },
   {
     badge: "House League",
@@ -56,7 +56,7 @@ const PROGRAMS: Program[] = [
       "Coaches guide each player’s growth on and off the court, promoting sportsmanship, fair play, brotherhood, and personal development.",
     ],
     details: [
-      "Boys ages 13–18",
+      "Boys ages 4–18",
       "8–12 weeks",
       "1 game per week",
       "Sunnah Spot jersey (player name and number included)",

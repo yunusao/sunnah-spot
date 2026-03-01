@@ -162,10 +162,10 @@ type VideoItem = {
 
 const TESTIMONIAL_VIDEOS: VideoItem[] = [
   {
-    key: "t1",
+    key: "tfinal",
     title: "",
-    src: VIDEOS.testimonialMain,
-    poster: "/thumbs/testimonial-thumb.png",
+    src: VIDEOS.testimonialFinalExport,
+    poster: "/thumbs/testimonial-final-export-thumb.png",
   },
   {
     key: "t2",
@@ -180,10 +180,10 @@ const TESTIMONIAL_VIDEOS: VideoItem[] = [
     poster: "/thumbs/testimonial-2-thumb.png",
   },
   {
-    key: "tfinal",
+    key: "t1",
     title: "",
-    src: VIDEOS.testimonialFinalExport,
-    poster: "/thumbs/testimonial-final-export-thumb.png",
+    src: VIDEOS.testimonialMain,
+    poster: "/thumbs/testimonial-thumb.png",
   },
 ];
 

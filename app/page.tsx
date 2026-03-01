@@ -220,7 +220,7 @@ export default function HomePage() {
           <ProgramCard
             title="Competitive Teams"
             description="Train and compete at a high level with structured practices, elite coaching, and a strong focus on teamwork, discipline, and leadership."
-            href="/programs"
+            href="https://www.brotherhoodelite.ca/"
             icon={<Trophy size={32} strokeWidth={2.2} />}
           />
 

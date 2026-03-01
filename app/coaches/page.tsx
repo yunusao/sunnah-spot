@@ -21,7 +21,7 @@ const COACHES: Coach[] = [
     name: "Louis Moore",
     role: "Mississauga Coach",
     bio: "Louis played four years at Sheridan as the starting point guard, earning major accolades including All-Canadian and induction into the Sheridan Hall of Fame. He played overseas in Luxembourg and later ran BuildBelieveSucceed training. NCCP certified, he’s coached rep teams and developed athletes now playing at schools like TMU (Ryerson), McMaster, and Carleton.",
-    photo: "/coaches/louis.jpeg",
+    photo: "/coaches/louis.jpg",
     tags: ["Point Guard Skills", "Player Development", "NCCP Certified"],
   },
   {
@@ -33,11 +33,18 @@ const COACHES: Coach[] = [
   },
   {
     name: "Moktar Toukaleh",
-    role: "Ottawa Coach • Rep Team Coach (U16)",
+    role: "Ottawa Coach",
     bio: "Coach Moktar has 3+ years coaching in Ottawa and led the 2023–2024 Sunnah Spot U16 Boys competitive rep team. He understands the challenges Muslim youth face in elite sports and is known for strong leadership, clear communication, and building a supportive environment where players thrive on and off the court.",
     photo: "/logo.png", // replace when you add it
     tags: ["Rep Team Coaching", "Culture & Character", "Communication"],
   },
+  {
+  name: "Mahadi Hussein (Abubakr)",
+  role: "Ottawa Coach",
+  bio: "Mahadi is a former elite cross-country prospect and multi-camp standout who transitioned his athletic foundation into a 16-year career in the health and wellness industry. Beyond helping thousands of families, he has refined his expertise by working alongside NBA and NFL professionals and hosting high-level basketball events for over a decade. As a dedicated father and community leader, he continues to bridge the gap between elite performance, grassroots athletic development, and nutrition.",
+  photo: "/coaches/abubakrr.jpeg", // add image when ready
+  tags: ["Athletic Performance", "Nutrition & Wellness", "Elite Athlete Development"],
+},
 ];
 
 function Tag({ children }: { children: React.ReactNode }) {

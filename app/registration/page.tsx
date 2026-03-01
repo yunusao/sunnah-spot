@@ -17,7 +17,7 @@ type FormState = {
   heardFrom: string;
 };
 
-const LOCATIONS = ["Ottawa", "Scarborough", "Markham", "Mississauga", "Brampton"] as const;
+const LOCATIONS = ["Ottawa", "Scarborough", "Markham", "Mississauga", "Brampton", "Pickering", "Oshawa", "Oakville"] as const;
 
 const PROGRAMS = [
   "Skill Development",
@@ -133,10 +133,18 @@ export default function RegistrationPage() {
 
               <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
                 <div className="text-sm font-semibold text-white">Locations</div>
-                <div className="mt-1 text-white/80">
-                  Ottawa, Scarborough, Markham, Mississauga, Brampton
+
+                  <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-white/80 list-disc list-inside">
+                    <li>Ottawa</li>
+                    <li>Scarborough</li>
+                    <li>Mississauga</li>
+                    <li>Markham</li>
+                    <li>Brampton</li>
+                    <li>Pickering</li>
+                    <li>Oshawa</li>
+                    <li>Oakville</li>
+                  </ul>
                 </div>
-              </div>
             </div>
 
             <div className="mt-6 rounded-2xl bg-white/5 border border-white/10 p-5">

@@ -14,12 +14,12 @@ type MediaItem = {
 
 const MEDIA: MediaItem[] = [
   { key: "final", title: "Sunnah Spot", src: VIDEOS.sunnahspotFinal, poster: "/thumbs/sunnahspot-final-thumb.png" },
+  { key: "u14", title: "U14 Team Mix", src: VIDEOS.u14TeamMix, poster: "/thumbs/u14-thumb.png" },
   { key: "ahmed", title: "Ahmed Mix", src: VIDEOS.ahmedShortMix, poster: "/thumbs/ahmed-thumb.png" },
   { key: "dawoud", title: "Dawoud Mix", src: VIDEOS.dawoudMix, poster: "/thumbs/dawoud-thumb.png" },
   { key: "farhan", title: "Farhan Mix", src: VIDEOS.farhanMix, poster: "/thumbs/farhan-thumb.png" },
-  { key: "teamMix2", title: "Team Mix", src: VIDEOS.teamMix2, poster: "/thumbs/team-mix-2-thumb.png" },
+  { key: "teamMix2", title: "U15 Team Mix", src: VIDEOS.teamMix2, poster: "/thumbs/team-mix-2-thumb.png" },
   { key: "u13", title: "U13 Team Mix", src: VIDEOS.u13TeamMix, poster: "/thumbs/u13-thumb.png" },
-  { key: "u14", title: "U14 Team Mix", src: VIDEOS.u14TeamMix, poster: "/thumbs/u14-thumb.png" },
   { key: "andOne", title: "AND ONE", src: VIDEOS.andOneMix, poster: "/thumbs/and-one-thumb.png" },
 ];
 
