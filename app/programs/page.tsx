@@ -11,10 +11,10 @@ type Program = {
 
 const PROGRAMS: Program[] = [
   {
-    badge: "Skill Development",
-    title: "Skill Development",
+    badge: "Basketball Development",
+    title: "Basketball Development",
     description: [
-      "Our Skill Development program caters to players of all levels, from beginners to advanced.",
+      "Our Basketball Development program caters to players of all levels, from beginners to advanced.",
       "Beginners focus on dribbling, shooting, passing, and defense. Advanced sessions hone pick-and-roll execution, reading the defense, spacing, timing, and decision-making under pressure.",
       "We integrate regular scrimmages and games to give opportunities for live gameplay and allow players to apply their skills in a competitive environment.",
       "Coaches provide personalized feedback tailored to each player’s level. We also emphasize physical conditioning, mental toughness, teamwork, and sportsmanship—building confidence for the next level.",

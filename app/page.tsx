@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Volleyball as Basketball, BookOpen, Trophy } from "lucide-react";
+import { useState } from "react";
+import { Volleyball as Basketball, Trophy, Users as UsersIcon, Volume2, VolumeX } from "lucide-react";
 import { Users, CalendarDays, ThumbsUp } from "lucide-react";
+import { VIDEOS } from "@/data/videos"; // adjust if your path differs
 
 function StatCard({
   value,
@@ -14,7 +18,6 @@ function StatCard({
 }) {
   return (
     <div className="relative rounded-2xl border border-black/5 shadow-sm overflow-hidden transition hover:shadow-lg">
-      {/* Marble texture */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.08]"
         style={{
@@ -25,16 +28,12 @@ function StatCard({
       />
 
       <div className="relative px-6 py-5 bg-white/95 backdrop-blur flex items-center gap-4">
-        {/* Icon */}
         <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-[rgb(var(--primary))]/10 text-[rgb(var(--primary))]">
           {icon}
         </div>
 
-        {/* Text */}
         <div>
-          <div className="text-2xl font-extrabold text-slate-900">
-            {value}
-          </div>
+          <div className="text-2xl font-extrabold text-slate-900">{value}</div>
           <div className="text-sm text-slate-600">{label}</div>
         </div>
       </div>
@@ -55,20 +54,14 @@ function ProgramCard({
 }) {
   return (
     <div className="relative rounded-2xl border border-black/5 shadow-sm overflow-hidden transition hover:shadow-lg">
-      {/* Marble */}
       <div className="absolute inset-0 opacity-[0.06] bg-[url('/textures/marble-light.png')] bg-cover bg-center pointer-events-none" />
 
       <div className="relative p-6 bg-white/95 backdrop-blur flex flex-col h-full">
-        {/* ICON */}
-        <div className="mb-4 text-[rgb(var(--primary))]">
-          {icon}
-        </div>
+        <div className="mb-4 text-[rgb(var(--primary))]">{icon}</div>
 
         <h3 className="text-lg font-bold text-slate-900">{title}</h3>
 
-        <p className="mt-2 text-sm text-slate-600 leading-6 flex-grow">
-          {description}
-        </p>
+        <p className="mt-2 text-sm text-slate-600 leading-6 flex-grow">{description}</p>
 
         <Link
           href={href}
@@ -82,6 +75,8 @@ function ProgramCard({
 }
 
 export default function HomePage() {
+  const [muted, setMuted] = useState(true);
+
   return (
     <div className="bg-[rgb(245,247,246)]">
       {/* HERO */}
@@ -104,7 +99,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-4 text-white/80 max-w-xl">
-            Combining sports training with Islamic values for stronger bodies
+            Combining basketball development with Islamic values for stronger bodies
             and souls.
           </p>
 
@@ -135,12 +130,77 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* REEL VIDEO (mainVid2) */}
+      <section className="container-x pb-20">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          {/* Copy */}
+          <div className="max-w-xl">
+            <div className="text-sm tracking-widest text-slate-500">WATCH</div>
+            <h2 className="mt-2 text-3xl font-extrabold text-slate-900">
+              See the <span className="text-[rgb(var(--primary))]">energy</span> at Sunnah Spot
+            </h2>
+            <p className="mt-3 text-slate-600">
+              Real training, real mentorship, real growth. Tap unmute to hear the vibe.
+            </p>
+
+            <div className="mt-6 flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/media"
+                className="inline-flex justify-center rounded-xl bg-[rgb(var(--primary))] px-6 py-3 font-semibold text-white hover:bg-[rgb(var(--primary-dark))] transition"
+              >
+                Watch More
+              </Link>
+              <Link
+                href="/registration"
+                className="inline-flex justify-center rounded-xl border border-black/10 bg-white px-6 py-3 font-semibold text-slate-900 hover:bg-black/5 transition"
+              >
+                Register
+              </Link>
+            </div>
+          </div>
+
+          {/* Reel */}
+          <div className="relative">
+            <div className="relative mx-auto w-full max-w-[360px] overflow-hidden rounded-[28px] border border-black/10 bg-black shadow-lg">
+              {/* 9:16 container */}
+              <div className="relative aspect-[9/16] w-full">
+                <video
+                  className="absolute inset-0 h-full w-full object-cover"
+                  src={VIDEOS.mainVid2}
+                  autoPlay
+                  loop
+                  playsInline
+                  muted={muted}
+                  controls={false}
+                  preload="metadata"
+                />
+                {/* Subtle overlay for button readability */}
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/30 via-black/0 to-black/0" />
+
+                {/* Mute toggle */}
+                <button
+                  type="button"
+                  onClick={() => setMuted((m) => !m)}
+                  className="absolute right-3 top-3 inline-flex items-center gap-2 rounded-full bg-black/55 px-3 py-2 text-xs font-semibold text-white backdrop-blur hover:bg-black/70 transition"
+                  aria-label={muted ? "Unmute video" : "Mute video"}
+                >
+                  {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
+                  {muted ? "Unmute" : "Mute"}
+                </button>
+              </div>
+            </div>
+
+            <div className="mt-3 text-center text-xs text-slate-500">
+              Tip: sound is off by default for autoplay
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROGRAMS */}
       <section className="container-x pb-20">
         <div className="max-w-2xl">
-          <div className="text-sm tracking-widest text-slate-500">
-            OUR PROGRAMS
-          </div>
+          <div className="text-sm tracking-widest text-slate-500">OUR PROGRAMS</div>
           <h2 className="mt-2 text-3xl font-extrabold text-slate-900">
             <span className="text-[rgb(var(--primary))]">Empowering</span> the Youth
           </h2>
@@ -151,24 +211,24 @@ export default function HomePage() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <ProgramCard
-            title="Skill Development"
+            title="Basketball Development"
             description="Develop strong fundamentals, basketball IQ, and confidence through structured training."
             href="/programs"
             icon={<Basketball size={32} strokeWidth={2.2} />}
           />
 
           <ProgramCard
-            title="Quran & Character"
-            description="Integrating Islamic values, discipline, and character development alongside athletic training."
+            title="Competitive Teams"
+            description="Train and compete at a high level with structured practices, elite coaching, and a strong focus on teamwork, discipline, and leadership."
             href="/programs"
-            icon={<BookOpen size={32} strokeWidth={2.2} />}
+            icon={<Trophy size={32} strokeWidth={2.2} />}
           />
 
           <ProgramCard
-            title="Camps & Competition"
-            description="Compete, grow, and challenge yourself in structured leagues and tournaments."
+            title="House League"
+            description="A fun and structured league environment where players build skills, confidence, and game experience in a supportive community setting."
             href="/programs"
-            icon={<Trophy size={32} strokeWidth={2.2} />}
+            icon={<UsersIcon size={32} strokeWidth={2.2} />}
           />
         </div>
       </section>

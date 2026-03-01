@@ -11,25 +11,32 @@ type Coach = {
 
 const COACHES: Coach[] = [
   {
-    name: "Coach Musa",
-    role: "Head Coach • Skills & Development",
-    bio: "Coach Musa focuses on skill development, basketball IQ, and building confident players through disciplined training and mentorship.",
-    photo: "/coaches/musaa.jpeg", // add later (or remove photo field)
-    tags: ["Skill Development", "Private Training", "Basketball IQ"],
+    name: "Musa Ahluwalia",
+    role: "Director • Founder • Head Coach",
+    bio: "Musa brings over a decade of playing and coaching experience. After converting to Islam at 14, he founded Sunnah Spot to help Muslim youth grow in the sport while strengthening their Muslim identity. Since 2019, he has coached 500+ Muslim youth across Ontario and helped many earn spots on top prep high school and university teams in Canada and the US.",
+    photo: "/coaches/musaa.jpeg", // replace when you add it
+    tags: ["Elite Development", "Leadership", "Muslim Youth Mentorship"],
   },
   {
-    name: "Coach (Add Name)",
-    role: "Assistant Coach",
-    bio: "Add a short 1–2 sentence bio here highlighting coaching focus, experience, and what players gain.",
-    photo: "/images/coach-2.jpg",
-    tags: ["Teamwork", "Defense", "Confidence"],
+    name: "Louis Moore",
+    role: "Mississauga Coach",
+    bio: "Louis played four years at Sheridan as the starting point guard, earning major accolades including All-Canadian and induction into the Sheridan Hall of Fame. He played overseas in Luxembourg and later ran BuildBelieveSucceed training. NCCP certified, he’s coached rep teams and developed athletes now playing at schools like TMU (Ryerson), McMaster, and Carleton.",
+    photo: "/coaches/louis.jpeg",
+    tags: ["Point Guard Skills", "Player Development", "NCCP Certified"],
   },
   {
-    name: "Coach (Add Name)",
-    role: "Assistant Coach",
-    bio: "Add a short 1–2 sentence bio here highlighting coaching focus, experience, and what players gain.",
-    photo: "/images/coach-3.jpg",
-    tags: ["Shooting", "Footwork", "Athleticism"],
+    name: "Alham Khatol",
+    role: "Scarborough Coach • Lead Assistant (GTA)",
+    bio: "Alham brings extensive coaching experience and a strong competitive background. With 5+ years training and coaching youth through Sunnah Spot and community programs, he’s committed to developing talent and building a genuine love for the game—while still playing at a high level today.",
+    photo: "/coaches/Alham.jpg",
+    tags: ["Skill Training", "High-Level Coaching", "GTA Programs"],
+  },
+  {
+    name: "Moktar Toukaleh",
+    role: "Ottawa Coach • Rep Team Coach (U16)",
+    bio: "Coach Moktar has 3+ years coaching in Ottawa and led the 2023–2024 Sunnah Spot U16 Boys competitive rep team. He understands the challenges Muslim youth face in elite sports and is known for strong leadership, clear communication, and building a supportive environment where players thrive on and off the court.",
+    photo: "/logo.png", // replace when you add it
+    tags: ["Rep Team Coaching", "Culture & Character", "Communication"],
   },
 ];
 

@@ -46,10 +46,16 @@ export default function Navbar() {
           ))}
           <Link
             href="/registration"
-            className="rounded-xl bg-[rgb(var(--primary))] px-4 py-2 text-sm font-semibold text-black hover:bg-[rgb(var(--primary-dark))]"
+            className="rounded-xl bg-[rgb(var(--primary))] px-4 py-2 text-sm font-semibold text-white hover:bg-[rgb(var(--primary-dark))]"
           >
             Join Now
           </Link>
+          <Link
+  href="/contact"
+  className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-[rgb(var(--primary))] hover:bg-white/90"
+>
+  Contact Us
+</Link>
         </nav>
 
         {/* Mobile */}

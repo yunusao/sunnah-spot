@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <div className="text-white font-semibold">Sunnah Spot Saliheen</div>
           <p className="mt-3 text-sm text-white/70">
-            Empowering youth through sports training grounded in Islamic values.
+            Empowering youth through basketball development grounded in Islamic values.
           </p>
         </div>
 

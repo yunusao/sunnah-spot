@@ -83,13 +83,20 @@ export default function MobileMenu({
             </ul>
           </nav>
 
-          <div className="mt-6">
+          <div className="mt-6 space-y-3">
             <Link
               href="/registration"
               onClick={onClose}
-              className="block w-full rounded-xl bg-[rgb(var(--primary))] px-4 py-3 text-center font-semibold text-black hover:bg-[rgb(var(--primary-dark))]"
+              className="block w-full rounded-xl bg-[rgb(var(--primary))] px-4 py-3 text-center font-semibold text-white hover:bg-[rgb(var(--primary-dark))]"
             >
               Join Now
+            </Link>
+            <Link
+              href="/contact"
+              onClick={onClose}
+              className="block w-full rounded-xl bg-white px-4 py-3 text-center font-semibold text-[rgb(var(--primary))] hover:bg-white/90"
+            >
+              Contact Us
             </Link>
           </div>
         </div>
