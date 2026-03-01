@@ -13,4 +13,6 @@ export const VIDEOS = {
   teamMix2: `${BASE}/team%20mix%202).mp4`,
   testimonialFinalExport: `${BASE}/testamonial%20final%20export.mp4`,
   u13TeamMix: `${BASE}/u13%20team%20mix.mp4`,
+  u14TeamMix: `${BASE}/14u%20mix.mp4`,
+  andOneMix: `${BASE}/And%20one.mp4`,
 } as const;

@@ -73,10 +73,11 @@ export default function ContactPage() {
     });
 
     if (!res.ok) {
-      setStatus("idle");
-      alert("Failed to send. Please try again.");
-      return;
-    }
+  setStatus("idle");
+  const data = await res.json().catch(() => null);
+  alert(data?.error ? `Failed: ${data.error}` : `Failed with ${res.status}`);
+  return;
+}
 
     setStatus("sent");
     form.reset();

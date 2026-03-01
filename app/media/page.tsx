@@ -19,6 +19,8 @@ const MEDIA: MediaItem[] = [
   { key: "farhan", title: "Farhan Mix", src: VIDEOS.farhanMix, poster: "/thumbs/farhan-thumb.png" },
   { key: "teamMix2", title: "Team Mix", src: VIDEOS.teamMix2, poster: "/thumbs/team-mix-2-thumb.png" },
   { key: "u13", title: "U13 Team Mix", src: VIDEOS.u13TeamMix, poster: "/thumbs/u13-thumb.png" },
+  { key: "u14", title: "U14 Team Mix", src: VIDEOS.u14TeamMix, poster: "/thumbs/u14-thumb.png" },
+  { key: "andOne", title: "AND ONE", src: VIDEOS.andOneMix, poster: "/thumbs/and-one-thumb.png" },
 ];
 
 function MediaCard({
