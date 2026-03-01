@@ -6,19 +6,24 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B1410] text-white/80 border-t border-white/10">
       <div className="container-x py-12 grid gap-10 md:grid-cols-3">
+        
+        {/* About */}
         <div>
-          <div className="text-white font-semibold">Sunnah Spot Saliheen</div>
+          <div className="text-white font-semibold">
+            Sunnah Spot Saliheen
+          </div>
           <p className="mt-3 text-sm text-white/70">
             Empowering youth through basketball development grounded in Islamic values.
           </p>
         </div>
 
+        {/* Quick Links */}
         <div>
           <div className="text-white font-semibold">Quick Links</div>
           <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <Link className="hover:text-white" href={l.href}>
+                <Link className="hover:text-white transition" href={l.href}>
                   {l.label}
                 </Link>
               </li>
@@ -26,6 +31,7 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Contact */}
         <div>
           <div className="text-white font-semibold">Contact</div>
 
@@ -59,12 +65,51 @@ export default function Footer() {
               <Instagram size={18} />
             </a>
           </div>
-</div>
+        </div>
       </div>
 
+      {/* Bottom Bar */}
       <div className="border-t border-white/10 py-5">
-        <div className="container-x text-xs text-white/50">
-          © {new Date().getFullYear()} Sunnah Spot Saliheen. All rights reserved.
+        <div className="container-x flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
+          
+          <div>
+            © {new Date().getFullYear()} Sunnah Spot Saliheen. All rights reserved.
+          </div>
+
+          <div className="flex flex-col items-center md:items-end gap-1">
+            <span className="text-white/40">
+              website made by
+            </span>
+
+            <a
+              href="https://prodbyyao.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-sm tracking-wide group transition"
+            >
+              <span
+                className="text-[rgb(var(--primary))]"
+                style={{ textShadow: "0 0 12px rgba(71,166,20,0.6)" }}
+              >
+                &gt; prod by{" "}
+              </span>
+
+              <span
+                className="text-white group-hover:text-[rgb(var(--primary))] transition"
+                style={{ textShadow: "0 0 10px rgba(255,255,255,0.4)" }}
+              >
+                yao
+              </span>
+
+              <span
+                className="text-[rgb(var(--primary))]"
+                style={{ textShadow: "0 0 12px rgba(71,166,20,0.6)" }}
+              >
+                _
+              </span>
+            </a>
+          </div>
+
         </div>
       </div>
     </footer>
