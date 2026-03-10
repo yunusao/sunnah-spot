@@ -28,7 +28,7 @@ export default function Navbar() {
               SUNNAH SPOT SALIHEEN
             </div>
             <div className="text-xs tracking-widest text-white/70">
-              Greater Toronto Area • Ottawa
+              GTA East • GTA West • Ottawa
             </div>
           </div>
         </Link>
