@@ -446,7 +446,7 @@ export default function RegistrationPage() {
               >
                 <div className="text-lg font-bold text-slate-900">Ottawa Group</div>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  For families and players in the Ottawa area.
+                  For Kanata, Barrhaven, Orleans, Gatineau, and nearby areas.
                 </p>
                 <div className="mt-4 inline-flex rounded-xl bg-[rgb(var(--primary))] px-4 py-2 text-sm font-semibold text-black">
                   Join Ottawa

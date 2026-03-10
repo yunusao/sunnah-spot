@@ -265,7 +265,7 @@ export default function HomePage() {
             </div>
 
             <p className="mt-2 text-sm text-slate-600">
-              Join the Sunnah Spot Ottawa WhatsApp group for updates and sessions.
+              For Kanata, Barrhaven, Orleans, Gatineau, and nearby areas.
             </p>
 
             <div className="mt-4 text-[rgb(var(--primary))] font-semibold">
@@ -285,7 +285,7 @@ export default function HomePage() {
             </div>
 
             <p className="mt-2 text-sm text-slate-600">
-              Updates for players in Scarborough, Durham, and East GTA.
+              For Scarborough, Markham, Pickering, Oshawa, and nearby areas.
             </p>
 
             <div className="mt-4 text-[rgb(var(--primary))] font-semibold">
@@ -305,7 +305,7 @@ export default function HomePage() {
             </div>
 
             <p className="mt-2 text-sm text-slate-600">
-              Updates for Mississauga, Brampton, and West GTA programs.
+              For Mississauga, Brampton, Oakville, and nearby areas.
             </p>
 
             <div className="mt-4 text-[rgb(var(--primary))] font-semibold">
