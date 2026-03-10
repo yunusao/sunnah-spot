@@ -410,22 +410,83 @@ export default function RegistrationPage() {
           <aside className="rounded-2xl bg-white border border-black/5 shadow-sm p-6">
             <div className="text-sm tracking-widest text-slate-500">NOTES</div>
             <h2 className="mt-2 text-xl font-extrabold text-slate-900">
-              Tryouts & next steps
+              Next Steps
             </h2>
             <p className="mt-3 text-sm text-slate-600">
-              Competitive Rep / AAU tryouts vary by location and age group. Submit the form and
-              we’ll contact you with details.
+              We will reach out via email with upcoming program announcements and registration links insha’Allah. If you opted into WhatsApp, we will also add you to the group for your area for faster updates and community connection. If you have any questions, feel free to email us at{" "}
+              <a href="mailto:info@sunnahspot.com" className="text-[rgb(var(--primary))] hover:underline">
+                info@sunnahspot.com
+              </a>
             </p>
-
-            <div className="mt-6 rounded-xl bg-[rgb(245,247,246)] p-4">
-              <div className="text-sm font-bold text-slate-900">Upcoming start date</div>
-              <p className="mt-2 text-sm text-slate-700">
-                House League / Skill Development: <span className="font-semibold">April 25th, 2026</span>
-              </p>
-            </div>
           </aside>
         </div>
       </section>
+
+      <section className="container-x pb-20">
+        <div className="rounded-[28px] border border-black/5 bg-white shadow-sm overflow-hidden">
+          <div className="px-6 py-8 sm:px-8 sm:py-10">
+            <div className="max-w-2xl">
+              <div className="text-sm tracking-widest text-slate-500">COMMUNITY</div>
+              <h2 className="mt-2 text-3xl font-extrabold text-slate-900">
+                Join Your Local{" "}
+                <span className="text-[rgb(var(--primary))]">WhatsApp Group</span>
+              </h2>
+              <p className="mt-3 text-slate-600">
+                Want updates even faster? Join the Sunnah Spot WhatsApp group for your area to
+                stay connected with announcements, training info, and upcoming programs.
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <a
+                href="https://chat.whatsapp.com/D25mv7Pev48IjO823Ngruy?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-black/5 bg-[rgb(245,247,246)] p-6 transition hover:shadow-md"
+              >
+                <div className="text-lg font-bold text-slate-900">Ottawa Group</div>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  For families and players in the Ottawa area.
+                </p>
+                <div className="mt-4 inline-flex rounded-xl bg-[rgb(var(--primary))] px-4 py-2 text-sm font-semibold text-black">
+                  Join Ottawa
+                </div>
+              </a>
+
+              <a
+                href="https://chat.whatsapp.com/IMsDKatnnWoCLvJWdX94PM?mode=hq2tcli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-black/5 bg-[rgb(245,247,246)] p-6 transition hover:shadow-md"
+              >
+                <div className="text-lg font-bold text-slate-900">GTA East Group</div>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  For Scarborough, Markham, Pickering, Oshawa, and nearby areas.
+                </p>
+                <div className="mt-4 inline-flex rounded-xl bg-[rgb(var(--primary))] px-4 py-2 text-sm font-semibold text-black">
+                  Join GTA East
+                </div>
+              </a>
+
+              <a
+                href="https://chat.whatsapp.com/CXPL5tMYJNgIWgOsH1XyFw?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-black/5 bg-[rgb(245,247,246)] p-6 transition hover:shadow-md"
+              >
+                <div className="text-lg font-bold text-slate-900">GTA West Group</div>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  For Mississauga, Brampton, Oakville, and nearby areas.
+                </p>
+                <div className="mt-4 inline-flex rounded-xl bg-[rgb(var(--primary))] px-4 py-2 text-sm font-semibold text-black">
+                  Join GTA West
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

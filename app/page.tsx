@@ -232,6 +232,89 @@ export default function HomePage() {
           />
         </div>
       </section>
+            {/* WHATSAPP GROUPS */}
+      <section className="container-x pb-20">
+        <div className="max-w-2xl">
+          <div className="text-sm tracking-widest text-slate-500">
+            COMMUNITY
+          </div>
+
+          <h2 className="mt-2 text-3xl font-extrabold text-slate-900">
+            Join Your Local{" "}
+            <span className="text-[rgb(var(--primary))]">
+              WhatsApp Group
+            </span>
+          </h2>
+
+          <p className="mt-3 text-slate-600">
+            Stay updated with training times, announcements, and programs in your area.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          
+          {/* Ottawa */}
+          <a
+            href="https://chat.whatsapp.com/D25mv7Pev48IjO823Ngruy?mode=gi_t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl border border-black/5 bg-white shadow-sm p-6 hover:shadow-lg transition"
+          >
+            <div className="text-lg font-bold text-slate-900">
+              Ottawa Group
+            </div>
+
+            <p className="mt-2 text-sm text-slate-600">
+              Join the Sunnah Spot Ottawa WhatsApp group for updates and sessions.
+            </p>
+
+            <div className="mt-4 text-[rgb(var(--primary))] font-semibold">
+              Join Group →
+            </div>
+          </a>
+
+          {/* GTA EAST */}
+          <a
+            href="https://chat.whatsapp.com/IMsDKatnnWoCLvJWdX94PM?mode=hq2tcli"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl border border-black/5 bg-white shadow-sm p-6 hover:shadow-lg transition"
+          >
+            <div className="text-lg font-bold text-slate-900">
+              GTA East Group
+            </div>
+
+            <p className="mt-2 text-sm text-slate-600">
+              Updates for players in Scarborough, Durham, and East GTA.
+            </p>
+
+            <div className="mt-4 text-[rgb(var(--primary))] font-semibold">
+              Join Group →
+            </div>
+          </a>
+
+          {/* GTA WEST */}
+          <a
+            href="https://chat.whatsapp.com/CXPL5tMYJNgIWgOsH1XyFw?mode=gi_t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl border border-black/5 bg-white shadow-sm p-6 hover:shadow-lg transition"
+          >
+            <div className="text-lg font-bold text-slate-900">
+              GTA West Group
+            </div>
+
+            <p className="mt-2 text-sm text-slate-600">
+              Updates for Mississauga, Brampton, and West GTA programs.
+            </p>
+
+            <div className="mt-4 text-[rgb(var(--primary))] font-semibold">
+              Join Group →
+            </div>
+          </a>
+
+        </div>
+      </section>
     </div>
   );
 }
