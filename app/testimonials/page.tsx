@@ -171,13 +171,13 @@ const TESTIMONIAL_VIDEOS: VideoItem[] = [
     key: "t2",
     title: "",
     src: VIDEOS.testimonial2,
-    poster: "/thumbs/testimonial-1-thumb.png",
+    poster: "/thumbs/testimonial-2-thumb.png",
   },
   {
     key: "t3",
     title: "",
     src: VIDEOS.testimonial1,
-    poster: "/thumbs/testimonial-2-thumb.png",
+    poster: "/thumbs/testimonial-1-thumb.png",
   },
   {
     key: "t1",
